@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibgha Timer ⏳💖</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+.timer-full { 
+    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; 
+    display: flex; flex-direction: column; align-items: center; justify-content: center; 
+    text-align: center; background: linear-gradient(135deg, #FFB6C1, #FF69B4, #FF1493); 
+    color: white; font-family: 'Georgia', serif; z-index: 10000; 
+}
+.timer-title { font-size: clamp(2.5em, 12vw, 6em); margin-bottom: 30px; text-shadow: 0 0 30px #FF1493; animation: pulse 1.5s infinite; }
+.timer-countdown { font-size: clamp(4em, 20vw, 12em); font-weight: bold; margin: 30px 0; text-shadow: 0 0 50px #FF1493; animation: glow 2s infinite alternate; min-height: 1em; }
+.timer-subtitle { font-size: 1.5em; opacity: 0.95; margin-top: 20px; }
+.logout-btn-timer { background: rgba(255,255,255,0.3); color: white; border: 3px solid #FF69B4; padding: 20px 40px; border-radius: 50px; font-size: 1.5em; cursor: pointer; margin-top: 40px; transition: all 0.3s; backdrop-filter: blur(10px); }
+.logout-btn-timer:hover { background: #FF69B4; transform: scale(1.05); }
+@keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+@keyframes glow { 0% { text-shadow: 0 0 30px #FF1493; } 100% { text-shadow: 0 0 60px #FF1493, 0 0 80px #FF69B4; } }
+    </style>
+</head>
+<body>
+    <div class="hearts-container"></div>
+    <div class="timer-full">
+        <h1 class="timer-title">Welcome Sibgha! ⏳💖</h1>
+        <div class="timer-countdown" id="timer-display">Loading...</div>
+        <p class="timer-subtitle">Time to 12 April 2026 PKT - Birthday Surprise Coming Soon!</p>
+        <button class="logout-btn-timer" onclick="logout()">Logout 💕</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

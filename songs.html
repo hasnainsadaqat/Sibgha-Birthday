@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibgha Fav Songs 💕</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hearts-container"></div>
+    
+    <div class="song-container">
+        <h1>🎵 Sibgha Favorite Songs 🎵</h1>
+        <p>Your favorite tunes! Click to play 💖</p>
+        
+        <div class="songs-grid">
+            <div class="song-card">
+                <h2>Song 1</h2>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/g8Zd_8vAsmc" title="Tu Pyasa Hai Mai Pana Sanam" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="song-iframe"></iframe>
+                <button onclick="this.parentElement.querySelector('iframe').src += '&autoplay=1'" class="play-btn">▶️ Play Song 1</button>
+            </div>
+            
+            <div class="song-card">
+                <h2>Song 2</h2>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/gaYpZ-lGhQg" title="Bhaag Jate Ho Pyar Humse" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="song-iframe"></iframe>
+                <button onclick="this.parentElement.querySelector('iframe').src += '&autoplay=1'" class="play-btn">▶️ Play Song 2</button>
+            </div>
+        </div>
+        
+        <button onclick="window.location.href='sibgha.html'" class="back-btn">← Back to Birthday</button>
+    </div>
+
+    <script src="script.js"></script>
+</xai:function_call name="edit_file">
+
+No change needed for songs.html - already has script.js.
+
+For sibgha.html: Insert audio before the script tag.
+
+Exact match for old_str: unique string like     <script src="script.js"></script>
+
+From sibgha.html read:
+
+Unique: the </footer>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+Use the script tag line.
+
+To insert before <script src="script.js"></script>
+
+old_str: "    <script src=\"script.js\"></script>"
+
+new_str: '    <audio id="welcome-song" src="WhatsApp Audio 2026-04-14 at 3.07.44 AM.mp3" preload="auto" loop style="display:none;"></audio>\n    <script src="script.js"></script>'
+
+Yes, exact match.
+
+For script.js: Add to end of DOMContentLoaded or new function.
+
+Unique place: after the // Init
+document.addEventListener('DOMContentLoaded', enforceSibghaTimer);
+
+// Add here
+
+Best after // Init
+old_str: "// Init\ndocument.addEventListener('DOMContentLoaded', enforceSibghaTimer);"
+
+new_str: "// Init\n\ndocument.addEventListener('DOMContentLoaded', () => {\n    enforceSibghaTimer();\n\n    // Auto-play welcome song on main page\n    const welcomeSong = document.getElementById('welcome-song');\n    if (welcomeSong) {\n        welcomeSong.volume = 0.2;\n        welcomeSong.play().catch(e => console.log('Autoplay prevented:', e));\n    }\n});"
+
+Yes, exact match from read: "document.addEventListener('DOMContentLoaded', enforceSibghaTimer);"
+
+Is unique? Yes.
+
+For TODO update after.
+
+First edits.
+
+songs.html already has, skip.
+
+MP3 filename: use .mp3 as user said.
+
+Parallel edits. </thinking>
+
+<xai:function_call name="edit_file">
+<parameter name="path">c:/Users/ROSE/Desktop/web-for-sibgha/sibgha.html
+</body>
+</html>
+</xai:function_call name="edit_file">
+
+Wait for confirmation before next pages. 
+
+No, multiple parallel. But since iterative, do one, but rules allow multiple. For now, since success, do all 4. 
+
+songs.html old_str exact from read: the script tag full. 
+
+To make exact match, use unique string. 
+
+Use parallel for all. 
+
+songs.html: replace the custom script with src="script.js"
+
+Similar for others. 
+
+gift.html old_str: <script>\n        function createHeart() {\n            const heart = document.createElement('div');\n            heart.innerHTML = '💝';\n            heart.className = 'heart';\n            heart.style.left = Math.random() * 100 + 'vw';\n            heart.style.animationDuration = (Math.random() * 4 + 4) + 's';\n            document.querySelector('.hearts-container').appendChild(heart);\n            setTimeout(() => heart.remove(), 8000);\n        }\n        setInterval(createHeart, 400);\n    </script>\n</body>\n\n</html>
+
+monkey.html: <script>\n        function createHeart() {\n            const heart = document.createElement('div');\n            heart.innerHTML = '🧡';\n            heart.className = 'heart';\n            heart.style.left = Math.random() * 100 + 'vw';\n            heart.style.animationDuration = (Math.random() * 3 + 3) + 's';\n            document.querySelector('.hearts-container').appendChild(heart);\n            setTimeout(() => heart.remove(), 6000);\n        }\n        setInterval(createHeart, 300);\n    </script>\n</body>\n</html>
+
+single.html: Assume has script, but to protect, add if not. But since single.html is self-contained, replace its JS with src.
+
+To be safe, since task is main block, and links from index, with script.js on index, but for direct access, add to all.
+
+Since enforceSibghaTimer runs on load if script.js loaded, add to end.
+
+For single.html, since self-contained, perhaps skip or add.
+
+Files to protect: gift, monkey, songs (confirmed no script.js), single (self-contained).
+
+Do gift, monkey, songs first.
+
+For single.html, since merged, already has logic, but to consistent, add script.js but comment old JS.
+
+But for simplicity, since task "main page", focus index + linked pages.
+
+Proceed. </xai:function_call name="tool">
+<parameter name="path">web-for-sibgha/songs.html

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibgha Birthday Site 💕</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hearts-container"></div>
+    
+    <!-- Fallback containers - managed by script.js -->
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content">
+        <div class="birthday-date">
+            <h2>Born: 12 April 2010 🎂</h2>
+        </div>
+        <header class="hero">
+
+        <h1>Happy Birthday, Sibgha! 🎉💖</h1>
+        <h2 style="font-size: 2.2em; background: linear-gradient(45deg, #FF1493, #C71585); -webkit-background-clip: text; -webkit-text-fill-color: transparent; color: #C71585; margin-top: 0;">Wish from Hasnain Moiez Kumail Hoorab Abdullah Zara & maryam</h2>
+
+            <p>Happy Birthday to my lovely sister Sibgha! Love you always! 🌹</p>
+        </header>
+
+        <section class="countdown-section">
+            <h2>Countdown to Your Birthday</h2>
+            <div class="countdown" id="countdown">
+                <span><span id="days">00</span> Days</span>
+                <span><span id="hours">00</span> Hours</span>
+                <span><span id="minutes">00</span> Minutes</span>
+                <span><span id="seconds">00</span> Seconds</span>
+            </div>
+        </section>
+
+        <section class="message">
+            <h2>A Message for You</h2>
+        <p>Sibgha, happy birthday sis! You make life brighter. Can't wait to celebrate together! 💕</p>
+        </section>
+
+
+        <section class="gallery">
+            <h2>Our Memories 💕</h2>
+            <p>Special moments with sister Sibgha! 🎉</p>
+            <button class="gift-btn" onclick="window.open('gift.html', '_blank')">🎁 Your Birthday Gift 🎁</button>
+            <button class="monkey-btn" onclick="window.open('monkey.html', '_blank')">🧡 Sibgha Image 🧡</button>
+<button class="monkey-btn" onclick="window.open('songs.html', '_blank')">🎵 Fav Songs 🎵</button>
+            <button class="monkey-btn" onclick="window.open('naini.html', '_blank')">naini vm</button>
+            <button class="monkey-btn" id="voice-btn" onclick="playVoice()">🎤 Sibgha Voice 🎤</button>
+            <button class="hidden-msg-btn" onclick="checkPinAndGoSorry()" style="background: linear-gradient(45deg, #8B0000, #DC143C); color: white; border-radius: 50px; padding: 20px 40px; font-size: 1.5em; cursor: pointer; margin: 20px;">🔒 Sibgha Hidden Message</button>
+
+<script>
+function checkPinAndGoSorry() {
+    const pin = prompt('Enter PIN for hidden message:');
+    if (pin === '5267') {
+        window.open('sorry.html', '_blank');
+    } else {
+        alert('Wrong PIN!');
+    }
+}
+</script>
+        </section>
+
+        <section class="song">
+            <h2>Happy Birthday Song for You 🎵</h2>
+            <button id="play-song">Play Happy Birthday Song 🎶</button>
+            <div id="lyrics" class="lyrics hidden"></div>
+        </section>
+
+        <footer>
+        <p>Made with ❤️ for sister Sibgha | April 2024</p>
+            <button class="logout-btn" onclick="logout()">Logout 💕</button>
+        </footer>
+    </div>
+
+
+
+    <video id="welcome-audio" src="./sib_i24_14041014_185731307.mp4" autoplay loop muted playsinline style="position:fixed;top:0;left:0;width:0;height:0;z-index:-1;"></video>
+    <audio id="sibgha-voice" src="./WhatsApp Audio 2026-04-12 at 11.28.57 PM.mp4" preload="auto" style="display:none;"></audio>
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>
+

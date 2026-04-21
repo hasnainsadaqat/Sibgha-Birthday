@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naini VM 💕</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hearts-container"></div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content">
+        <header class="hero">
+            <h1>Naini VM Page 🎉💖</h1>
+            <p>Special Naini VM content for Sibgha! 🌹</p>
+        </header>
+
+        <section class="gallery">
+            <h2>Naini Voice 🎤</h2>
+            <button class="monkey-btn" id="naini-voice-btn" onclick="playNainiVoice()">▶️ Play Naini Audio</button>
+            <button class="monkey-btn" id="video-voice-btn" onclick="playVideoVoice()">▶️ Play Video Voice</button>
+            <button class="monkey-btn" onclick="window.open('sibgha.html', '_blank')">🏠 Back to Sibgha</button>
+        </section>
+
+        <footer>
+            <p>Made with ❤️ | Naini VM</p>
+        </footer>
+    </div>
+
+    <audio id="naini-voice" src="./WhatsApp Audio 2026-04-21 at 11.22.37 PM.mp4" preload="auto" style="display:none;"></audio>
+    <video id="video-voice" src="./not._.yours._.2010_14050201_233138970.mp4" preload="auto" muted style="display:none;"></video>
+    <script>
+        function playNainiVoice() {
+            document.getElementById('naini-voice').play();
+        }
+        function playVideoVoice() {
+            const video = document.getElementById('video-voice');
+            video.play().catch(e => alert('Play failed: ' + e.message));
+        }
+    </script>
+</body>
+</html>
